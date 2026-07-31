@@ -1,0 +1,9 @@
+header{
+    .desktop-only {
+        display: flex;
+        justify-content: center;
+        font: var(--text-logo);
+        color: #374151;
+        gap: 0,43rem;
+    }
+}
