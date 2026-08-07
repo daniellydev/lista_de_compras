@@ -11,15 +11,78 @@
 </head>
 <body>
     <header>
-        <div class="desktop.only">
+        <div class="desktop-only">
             <img src="assets/Lista de compras/Vector.png" alt="Logo">
             <span>quicklist</span>
         </div>
         <div class="icons">
-            <img src="assets/icons/" alt="">
-            <span>← voltar</span>
+            <a href="#"><- Voltar</a>
         </div>
-        <h1>Compras da semana</h1>
     </header>
-</body>
+    <main>
+    <h1>Compras da semana</h1>
+   <form>
+    <div class="bnt-submit">
+        <input type="text" placeholder="Adicione um novo item">
+        <button type="submit"> Adicionar item
+        </button>
+    </div>
+    <div>
+        <ul class="list">
+    <li>
+        <label>
+            <input type="checkbox">
+            <span>Pão de forma</span>
+        </label>
+        <button class="btn-remover">
+            <img src="assets/icons/lixeira.png" alt="Remover item">
+        </button>
+    </li>
+     <li>
+        <label>
+            <input type="checkbox">
+            <span>Café preto</span>
+        </label>
+        <button class="btn-remover">
+            <img src="assets/icons/lixeira.png" alt="Remover item">
+        </button>
+    </li>
+     <li>
+        <label>
+            <input type="checkbox">
+            <span>Suco de laranja</span>
+        </label>
+        <button class="btn-remover">
+            <img src="assets/icons/lixeira.png" alt="Remover item">
+        </button>
+    </li>
+     <li>
+        <label>
+            <input type="checkbox">
+            <span>Bolacha</span>
+        </label>
+        <button class="btn-remover">
+            <img src="assets/icons/lixeira.png" alt="Remover item">
+        </button>
+    </li>
+</ul>
+    </div>
+</form>
+</main>
+
+<footer>
+    <div class="alert">
+    <div class="alert-content">
+        <img src="assets/icons/warning.png" alt="">
+        <span>O item foi removido da lista</span>
+    </div>
+
+    <button class="alert-close" aria-label="Fechar">
+        <img src="assets/icons/delete.png" alt="">
+    </button>
+</div>
+</footer>
+     <script src="script.js"></script>
+   
+    </body>
 </html>

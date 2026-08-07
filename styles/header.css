@@ -1,9 +1,19 @@
-header{
+header { 
     .desktop-only {
         display: flex;
+        align-items: center;
         justify-content: center;
         font: var(--text-logo);
-        color: #374151;
-        gap: 0,43rem;
+        gap: 8px;
+        margin-top: 25px;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        font: var( --texte-link);
+        color: var( --color-brand);
+        margin: 7.9375rem 58.75rem 1rem 23.0625rem;
     }
 }
+

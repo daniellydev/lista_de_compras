@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--background-primary);
 }
 
 :root {
@@ -23,10 +24,10 @@
 
     /* Tipografia */
 
-    --text-title: 700 24px/2rem var(--font-inter);
-    --text-label: 600 16px/1.25rem var(--font-inter);
-    --texte-paragraph: 500 16px/1.25rem var(--font-inter);
-    --texte-link: 500 14px/1rem var(--font-inter);
+    --text-title: 700 1.5rem/2rem var(--font-inter);
+    --text-label: 600 1rem/1.25rem var(--font-inter);
+    --text-paragraph: 500 1rem/1.5rem var(--font-inter);
+    --text-link: 500 .875rem/1rem var(--font-inter);
 
-    --text-logo: 700 26/2.5rem var(--font-sora);
+    --text-logo: 700 1.625rem/2.5rem var(--font-sora);
 }

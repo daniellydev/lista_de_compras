@@ -1,0 +1,113 @@
+main {
+  h1 {
+    color: var(--content-primary);
+    font: var(--text-title);
+    margin: 0rem 47.5625rem 0 22.8125rem;
+  }
+
+  .bnt-submit {
+    
+    input {
+      padding: .6875rem 16.3125rem .6875rem 1.125rem;
+      border-radius: 0.75rem;
+      border: 0.125rem solid;
+      border-color: var(--border-primary);
+      background-color: var(--background-secondary);
+      margin: 2.625rem 0rem 2.625rem 22.8125rem;
+      font: var(--text-paragraph);
+      color: var(--content-tertiary);
+
+      &:hover {
+        border-color: var(--border-hover);
+      }
+
+      &:focus {
+        border: none;
+        outline: 0.125rem solid var(--color-brand);
+      }
+    }
+
+    button {
+      margin-left: 1rem;
+      padding: .75rem 1.5rem 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      border: none;
+      background-color: var(--color-brand);
+      color: var(--background-secondary);
+      font: var( --text-label);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-brand-hover);
+      }
+    }
+  }
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .75rem;
+        background-color: var(--background-secondary);
+        border-radius: .75rem;
+        margin: 0rem 23.125rem 0rem 23.0625rem;
+        
+
+        label {
+            
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            cursor: pointer;
+            background-color: var(--background-secondary);
+        }
+
+        input {
+            appearance: none;
+
+            width: 1rem;
+            height: 1rem;
+
+            border: 1px solid var(--border-primary);
+            border-radius: .375rem;
+            background-color: var(--background-secondary);
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover {
+                border: .1094rem solid;
+                border-color: var(--border-hover);
+            }
+
+            &:checked {
+                background: var(--color-brand);
+                border-color: var(--color-brand);
+            }
+            
+        }
+
+        span {
+            background-color: var(--background-secondary);
+            font: var(--text-paragraph);
+            color: var(--content-secondary);
+        }
+
+        .btn-remover {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+}
