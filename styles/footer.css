@@ -1,73 +1,65 @@
-footer{
-    .alert {
+.alerts{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    
-    padding: .75rem 1rem;
-    margin-top: 2rem;
-    margin: 2.25rem 23.125rem 0rem 23.0625rem;
+    position:absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 40rem;
+    width: 100%;
 
+    @media(width <640px){
+    padding: 0 2rem;
+   }
+}
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 0.75rem 1rem;
+
+  background: var(--color-danger);
+  border-radius: 0.75rem;
+
+  .alert-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     background: var(--color-danger);
-    border-radius: .75rem;
 
-    .alert-content {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-        background: var(--color-danger);
-
-        img{
-            background: var(--color-danger);
-        }
-
-        span {
-            font: var(--text-paragraph);
-            color: var(--background-secondary);
-            background: var(--color-danger);
-        }
+    img {
+      background: var(--color-danger);
     }
 
-    .alert-close {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        border: none;
-        background: transparent;
-        cursor: pointer;
-
-        img {
-            background: var(--color-danger);
-            width: 1rem;
-            height: 1rem;
-        }
-
-        &:hover {
-            opacity: .8;
-        }
+    span {
+      font: var(--text-paragraph);
+      color: var(--background-secondary);
+      background: var(--color-danger);
     }
+  }
+
+  .alert-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      background: var(--color-danger);
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

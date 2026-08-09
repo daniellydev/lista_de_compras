@@ -1,19 +1,32 @@
 header { 
-    .desktop-only {
+    >div {
+        max-width: 40rem;
+        margin: 0 auto;
+        margin-top: 1.5625rem;
+    }
+
+    .logo{
         display: flex;
         align-items: center;
         justify-content: center;
-        font: var(--text-logo);
-        gap: 8px;
-        margin-top: 25px;
+        gap:.5rem;
+         font: var(--text-logo);
+
+         @media(width <640px){
+            display: none;
+         }
     }
 
-    .icons{
+    a{
         display: flex;
         align-items: center;
-        font: var( --texte-link);
+        font: var( --text-link);
         color: var( --color-brand);
-        margin: 7.9375rem 58.75rem 1rem 23.0625rem;
+        margin: 4rem 0 1rem 0;
+
+         @media(width <640px){
+          margin-top: 2.125rem;
+         }
     }
 }
 
